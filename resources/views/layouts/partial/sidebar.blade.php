@@ -39,6 +39,25 @@
               <p>Items</p>
             </a>
         </li>
+        <li class="nav-item {{Request::is('admin/reservation*') ? 'active':''}} ">
+          <a class="nav-link" href="{{route('reservation.index')}}">
+            <i class="material-icons">
+              chrome_reader_mode
+              </i>
+              <p>Reservation</p>
+            </a>
+        </li>
+
+
+        <li class="nav-item {{Request::is('admin/contact*') ? 'active':''}} ">
+          <a class="nav-link" href="{{route('contact.index')}}">
+            <i class="material-icons">
+              chrome_reader_mode
+              </i>
+              <p>Contact Message</p>
+            </a>
+        </li>
+
         <li class="nav-item ">
           <a class="nav-link" href="./icons.html">
             <i class="material-icons">bubble_chart</i>
